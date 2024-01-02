@@ -172,9 +172,6 @@ Global
 		{E9D1619F-D4A1-4AFA-B261-B01091EB8D56} = {294B51F3-90EF-4F0A-BB04-20321A513A4F}
 		{2FC87C8A-79C0-407D-A022-A13E793C2BC1} = {294B51F3-90EF-4F0A-BB04-20321A513A4F}
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {ABEC2F20-DF97-4AC2-8167-39B4B1187B99}
-	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
 		Manager = AnkhSVN - Subversion Support for Visual Studio

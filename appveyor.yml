@@ -1,10 +1,7 @@
 version: 2.2.0-ci-{branch}-{build}
 image: Visual Studio 2013
 configuration: Release
-platform:
-- x64
-- Win32
-- ARM64
+platform: ARM64
 shallow_clone: true
 before_build:
 - ps: (Get-Content "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include\ntsecapi.h") | %{$_ -replace "^RtlDecryptMemory\($", "__stdcall RtlDecryptMemory("} | Set-Content "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include\ntsecapi.h"

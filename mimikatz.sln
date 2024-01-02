@@ -102,7 +102,7 @@ Global
 		Simple_DLL|x64 = Simple_DLL|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB9B5E61-7C34-4280-A211-E979E1D6977F}.Release|ARM64.ActiveCfg = Release|ARM64
+		{FB9B5E61-7C34-4280-A211-E979E1D6977F}.Release|ARM64.ActiveCfg = Release|Win32
 		{FB9B5E61-7C34-4280-A211-E979E1D6977F}.Release|Win32.ActiveCfg = Release|Win32
 		{FB9B5E61-7C34-4280-A211-E979E1D6977F}.Release|Win32.Build.0 = Release|Win32
 		{FB9B5E61-7C34-4280-A211-E979E1D6977F}.Release|x64.ActiveCfg = Release|x64

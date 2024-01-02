@@ -63,7 +63,7 @@
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Platform)' == 'ARM64'">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <UseOfMfc>static</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -74,9 +74,6 @@
     <IncludePath>$(SolutionDir)inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)lib\$(Platform);$(LibraryPath)</LibraryPath>
     <TargetName Condition="'$(Configuration)' == 'Second_Release_PowerShell'">powerkatz</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <ManagedAssembly>true</ManagedAssembly>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -97,14 +94,14 @@
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <ErrorReporting>None</ErrorReporting>
-      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>advapi32.lib;bcrypt.lib;cabinet.lib;crypt32.lib;cryptdll.lib;dnsapi.lib;delayimp.lib;fltlib.lib;mpr.lib;msxml2.lib;ncrypt.lib;netapi32.lib;ntdsapi.lib;odbc32.lib;ole32.lib;oleaut32.lib;rpcrt4.lib;shlwapi.lib;samlib.lib;secur32.lib;shell32.lib;user32.lib;userenv.lib;version.lib;hid.lib;setupapi.lib;winscard.lib;winsta.lib;wbemuuid.lib;wldap32.lib;wtsapi32.lib;advapi32.hash.lib;msasn1.min.lib;ntdll.min.lib;netapi32.min.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>advapi32.lib;bcrypt.lib;cabinet.lib;crypt32.lib;cryptdll.lib;delayimp.lib;dnsapi.lib;fltlib.lib;mpr.lib;msxml2.lib;ncrypt.lib;netapi32.lib;ntdsapi.lib;odbc32.lib;ole32.lib;oleaut32.lib;rpcrt4.lib;shlwapi.lib;samlib.lib;secur32.lib;shell32.lib;user32.lib;userenv.lib;version.lib;hid.lib;setupapi.lib;winscard.lib;winsta.lib;wbemuuid.lib;wldap32.lib;wtsapi32.lib;advapi32.hash.lib;msasn1.min.lib;ntdll.min.lib;netapi32.min.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AssemblyDebug>false</AssemblyDebug>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
@@ -112,7 +109,6 @@
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <DelayLoadDLLs>bcrypt.dll;ncrypt.dll</DelayLoadDLLs>
-      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
